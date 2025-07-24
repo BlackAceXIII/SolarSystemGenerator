@@ -1,10 +1,26 @@
 # SolarSystemGenerator
 
 
-`attempt09` has changed tab names from London, Paris, and Tokyo to the more generic *sectors*, which range from *00-09*. 
+The last version, `attempt09`, has changed tab names from London, Paris, and Tokyo to the more generic *sectors*, which range from *00-09*. 
 The json file being referenced was changed from  `planetTypes06.json` to `planetTypes.json`, and the tabs were adjusted to accomadate the additional information.
 Each tab now has a section for the "Element", "SubType", and "Creature Type".
 The tabs were reshaped from rectangles into circles, and the *Reroll All* button now changes shape when hovered over.
+
+# TO DO LIST
+Types of Trade
+How far from rest of government
+Types of governments
+Separate lists that don't collide as much
+Less repetition in lists
+Classes:
+    Celestial Body Class
+    Extended by Planet
+    
+Roll Celestial Body
+    -> Roll related array for non-planet celestial Body
+    -> More complex set of rolls for Planet
+        ->Elements, intelligent life, governments, size, shape, etc
+    -> Nothing more for empty space
 
 # AI GENERATED SUMMARY
 # HTML Tab Layout with Reroll Button
