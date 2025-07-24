@@ -1,0 +1,49 @@
+{
+    "comGov": [
+        {"govAspect":""},
+        {
+            "govAspect":"Power Source",
+            "PowerSourceType": ["Democracy", "Oligarchy", "Autocracy"]
+        },
+        {
+            "govAspect":"Monarchy-Council",
+            "mcType":["Monarchy", "Council"]
+        },
+        {"govAspect":"Religious-Secular", "rsType":["Religious", "Secular"]},
+        {
+            "govAspect":"Size",
+            "size":[
+                "Interstellar",
+                "Interplanetary",
+                "Global",
+                "Transcontinental/Intercontinental",
+                "Continental",
+                "Regional",
+                "Small", 
+                "Tiny"
+            ]
+        },
+        {
+            "govAspect":"Power Structure",
+            "PowerStructureType": [
+                {
+                    "PowerSourceTypeName": "Unitarism",
+                    "PowerSourceSubType":["Unitary State", "Empire", "Principality"]
+                },
+                {
+                    "PowerSourceTypeName": "Vassal state",
+                    "PowerSourceSubType":[]
+                },
+                {
+                    "PowerSourceTypeName": "Federalism",
+                    "PowerSourceSubType":[]
+                }
+            ]
+        },
+        {
+            "govAspect":"Magic Amount",
+            "Magic":["High Tier Magic", "Low Tier Magic", "Mixed", "Nonmagical"]
+        },
+        {"govAspect":""}
+    ]
+}

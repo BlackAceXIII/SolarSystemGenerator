@@ -1,0 +1,41 @@
+{
+	"elements": [
+        {
+			"element": "Air"
+		},
+		{
+			"element": "Earth"
+		},
+		{
+			"element": "Fire"
+		},
+		{
+			"element": "Water"
+		},
+		{
+			"element": "Light"
+		},
+		{
+			"element": "Dark"
+		},
+		{
+			"element": "Holy"
+		},
+		{
+			"element": "Unholy"
+		},
+		{
+			"element": "Dead"
+		},
+        {
+            "element": "Fairy/Fae"
+        },
+        {
+            "element": "Wood"
+        },
+        {
+            "element": "Metal"
+        }
+
+	]
+}

@@ -1,0 +1,146 @@
+{
+	"planetTypes": [
+        {
+			"type": "Air",
+			"planetSubType": [
+				"Gas Giant",
+				"Earth-like with Floating Islands",
+				"Eternal Storms on an Earth-like planet",
+				"A random amount of floating islands only connected by a connected atmosphere that is only held together by Magic.",
+				"ETC"
+			],
+			"creatureType": [
+				"The most common traits of creatures in this world are: the ability to fly; the ability to survive in high altitudes; being composed of air or electricity; the ability to manipulate the winds and skies with magical or supernatural powers.",
+				"Examples of such creatures include Air Elementals, Storm Dragons, Eagles, and a Bear with skin made of air and electricity"
+			]
+		},
+		{
+			"type": "Earth",
+			"planetSubType": [
+				"Mostly rock and stone",
+				"Landmass surrounds Ocean",
+				"High concentration of crystals and metals",
+				"Earth-like with less oceans and more mountains"
+			],
+			"creatureType": [
+				"The most common traits of creatures in this world are: the ability to dig through the ground, sometimes leaving behind permanent tunnels; being able to climb rocky terrains and travel across rocky terrains fast; having skins that are as hard as stone or made of stone; the ability to manipulate the lands with magical or supernatural powers; and the ability to sense anything touching the same rocky surface.",
+				"Examples of such creatures include Earth Elementals, Earth Dragons, Badgers, and a Bear with skin made of stone."
+			]
+		},
+		{
+			"type": "Fire",
+			"planetSubType": [
+				"Star-like",
+				"Lava Oceans",
+				"Volcanic Lands"
+			],
+			"creatureType": [
+				"The most common traits of creatures in this world are: the ability to breathe fire; resist or be immune to extreme heat, including from fire; being made of fire; being able to produce or manipulate fire with magical or supernatural powers; and the ability to produce and manipulate smoke and ash.",
+				"Examples of such creatures include Fire Elementals, Fire Dragons, and a Bear with skin made of flames or lava."
+			]
+		},
+		{
+			"type": "Water",
+			"planetSubType": [
+				"Water World",
+				"Large Oceans with Small Islands",
+				"Frozen Ice World"
+			],
+			"creatureType": [
+				"The most common traits of creatures in this world are: the ability to breathe underwater; the ability to survive the pressure of the depths of the oceans; the ability to resist the cold; being made out of water or ice; the ability to manipulate water, ice, the oceans or other bodies of water with magic or supernatural powers.",
+				"Examples of such creatures include Water Elementals, Water Dragons, Fishes, and Bears that can breathe underwater and swim."
+			]
+		},
+		{
+            "type": "Wood",
+			"planetSubType": ["Blank"],
+			"creatureType": [
+				"The most common traits of creatures in this world are: the ability to climb trees; the ability to manipulate plants and trees with magic or supernatural powers; being made of wood or plants; and the ability to communicate with plants.",
+				"Examples of such creatures include Wood Elementals, Forest Dragons, Monkeys, Panthers, and a Bear made of wood."
+			]
+        },
+        {
+            "type": "Metal",
+			"planetSubType": ["Blank"],
+			"creatureType": [
+				"The most common traits of creatures in this world are: the ability to consume metal; the ability to manipulate metal with magic or supernatural powers; being made of metal.",
+				"Examples of such creatures include Metal Elementals, Metallic Dragons, and a Bear made of metal."
+			]
+        },
+		{
+			"type": "Light",
+			"planetSubType": [
+				"Eternal Daytime",
+				"All objects emit Light",
+				"Lots of naturally occurring resources produces light"
+			],
+			"creatureType": [
+				"The most common traits of creatures in this world are: blank.",
+				"Examples of such creatures include blank"
+			]
+		},
+		{
+			"type": "Dark",
+			"planetSubType": [
+				"Eternal Nighttime",
+				"Light sources are less effective while near the planet",
+				"Lots of naturally occurring resources produces darkness"
+			],
+			"creatureType": [
+				"The most common traits of creatures in this world are: blank.",
+				"Examples of such creatures include blank"
+			]
+		},
+		{
+			"type": "Holy",
+			"planetSubType": [
+				"Hallowed/Consecrated Lands",
+				"Holy Magic is empowered"
+			],
+			"creatureType": [
+				"The most common traits of creatures in this world are: blank.",
+				"Examples of such creatures include blank"
+			]
+		},
+		{
+			"type": "Unholy",
+			"planetSubType": [
+				"Desecrated Lands",
+				"Fiendish Magic is empowered"
+			],
+			"creatureType": [
+				"The most common traits of creatures in this world are: blank.",
+				"Examples of such creatures include blank"
+			]
+		},
+		{
+            "type": "Fairy/Fae",
+			"planetSubType": ["Blank"],
+			"creatureType": [
+				"The most common traits of creatures in this world are: blank.",
+				"Examples of such creatures include blank"
+			]
+        },
+		{
+			"type": "Dead",
+			"planetSubType": [
+				"Lifeless Wasteland",
+				"Shattered World",
+				"Undeath emenates from the world"
+			],
+			"creatureType": [
+				"The most common traits of creatures in this world are: anything or nothing.",
+				"Examples of such creatures include anything or nothing."
+			]
+		},
+		{
+			"type": "Blank",
+			"planetSubType": ["Blank", "Unknown"],
+			"creatureType": [
+				"The most common traits of creatures in this world are: blank.",
+				"Examples of such creatures include blank"
+			]
+		}
+
+	]
+}

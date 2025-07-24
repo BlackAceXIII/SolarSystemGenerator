@@ -1,0 +1,47 @@
+{
+    "intLife": [
+        {
+            "intLifeType": "Humanoid",
+            "intLifeform": [
+                "Human",
+                "Elf",
+                "Dwarf",
+                "Gnome",
+                "Orc",
+                "Goblin",
+                "Hobgoblin",
+                "Ogre",
+                "Giant"
+            ]
+        },
+        {
+            "intLifeType": "Beastkin",
+            "intLifeform": [
+                "Avian",
+                "Therianthrope",
+                "Reptilian",
+                "Terrestrial",
+                "Aquatic"
+            ]
+        },
+        {
+            "intLifeType": "Others",
+            "intLifeform": [
+                "Dragon",
+                "Mechanical",
+                "Techno-organic/Bio-mechanical",
+                "Construct",
+                "Aberrant",
+                "Fiendish",
+                "Angelic",
+                "Elemental",
+                "Fae",
+                "Slime",
+                "Plant",
+                "Insectoid",
+                "Spirits",
+                "Undead"
+            ]
+        }
+    ]
+}

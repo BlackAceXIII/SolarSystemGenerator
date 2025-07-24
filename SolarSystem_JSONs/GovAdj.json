@@ -1,0 +1,40 @@
+{
+    "GovernmentAdjectives": {
+        "ValueDrivenOrPhilosophical": [
+            { "adjective": "Benevolent", "description": "Cares for its people; just and protective." },
+            { "adjective": "Ruthless", "description": "Will sacrifice anything to achieve its goals." },
+            { "adjective": "Pious", "description": "Deeply religious or theologically motivated." },
+            { "adjective": "Pragmatic", "description": "Focuses on what works, not ideology." },
+            { "adjective": "Idealistic", "description": "Driven by utopian or moral visions." },
+            { "adjective": "Utilitarian", "description": "Prioritizes the greatest good for the most people." },
+            { "adjective": "Zealous", "description": "Fanatically devoted to its mission or creed." },
+            { "adjective": "Stoic", "description": "Emotionless, reserved, values control and order." }
+        ],
+        "StructuralOrOperational": [
+            { "adjective": "Decentralized", "description": "Power is distributed among many locations or figures." },
+            { "adjective": "Centralized", "description": "All power is consolidated in one place or person." },
+            { "adjective": "Mobile", "description": "Government structure is nomadic or ship-based." },
+            { "adjective": "Hidden", "description": "Operates from the shadows or behind another façade." },
+            { "adjective": "Fragmented", "description": "Power is fractured, often contested internally." },
+            { "adjective": "Automated", "description": "Run by machines or algorithms." }
+        ],
+        "CulturalOrSocialFocus": [
+            { "adjective": "Scholarly", "description": "Values knowledge, research, or wisdom." },
+            { "adjective": "Militant", "description": "Prioritizes strength, conquest, or defense." },
+            { "adjective": "Mercantile", "description": "Centered on trade, commerce, and profit." },
+            { "adjective": "Isolationist", "description": "Avoids outside contact or influence." },
+            { "adjective": "Expansionist", "description": "Constantly growing, conquering, or assimilating." },
+            { "adjective": "Traditionalist", "description": "Obsessed with heritage and customs." },
+            { "adjective": "Reformist", "description": "Always restructuring, progressive or chaotic." }
+        ],
+        "ToneAndStyle": [
+            { "adjective": "Shadowy", "description": "Operates with secrecy and espionage." },
+            { "adjective": "Divisive", "description": "Society is split by internal tension." },
+            { "adjective": "Harmonious", "description": "Highly unified or cooperative." },
+            { "adjective": "Corrupt", "description": "Self-serving, bribe-driven, or decaying." },
+            { "adjective": "Glorious", "description": "Famed for achievements or a mythic golden age." },
+            { "adjective": "Oppressive", "description": "Controls citizens harshly and restrictively." },
+            { "adjective": "Decadent", "description": "Extravagant, indulgent, morally declining." }
+        ]
+    }
+}

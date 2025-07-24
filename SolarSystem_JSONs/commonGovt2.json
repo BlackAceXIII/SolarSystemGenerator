@@ -1,0 +1,12 @@
+{
+    "comGov":[
+        {
+            "part1":[
+                "Autocratic", "Theocratic", "Democratic"
+            ],
+            "part2":[
+                "Autocracy", "Theocracy", "Monarchy", "Republic", "Chiefdom"
+            ]
+        }
+    ]
+}

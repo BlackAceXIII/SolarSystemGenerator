@@ -1,0 +1,14 @@
+{
+    "stationRole": [
+        "Observatory",
+        "Space Telescope",
+        "Citadel",
+        "Battle Station",
+        "Communication Relay",
+        "Legal Marketplace",
+        "Illegal Marketplace",
+        "Refueling Station",
+        "Space Bridge"
+    ],
+    "condition": ["Perfect", "Good", "Bad", "Abandoned", "Destroyed"]
+}

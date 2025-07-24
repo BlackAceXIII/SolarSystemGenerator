@@ -1,0 +1,92 @@
+{
+    "FactionalObjectives": {
+        "TechnologicalSupremacy": [
+            {
+                "name": "Stellar Expansion",
+                "description": "Launch colony vessels or terraform alien worlds to ensure your civilization's survival and dominance."
+            },
+            {
+                "name": "Quantum Leap",
+                "description": "Achieve breakthroughs in physics or engineering that redefine the limits of technology and warfare."
+            },
+            {
+                "name": "Singularity Drive",
+                "description": "Fuse consciousness with machine or build an AI that can reshape society or reality."
+            },
+            {
+                "name": "Genetic Apotheosis",
+                "description": "Control life itself by perfecting bodies, unlocking immortality, or creating superior castes."
+            }
+        ],
+        "CulturalIdeologicalDominance": [
+            {
+                "name": "Cultural Eclipse",
+                "description": "Make your way of life, philosophy, or media so pervasive that other factions adopt it voluntarily or gradually fade."
+            },
+            {
+                "name": "Symbolic Hegemony",
+                "description": "Ensure your language, dress, or rituals become synonymous with modernity or progress."
+            },
+            {
+                "name": "Tradition Warden",
+                "description": "Restore and safeguard ancient values, arts, or codes against a world losing its soul."
+            }
+        ],
+        "MilitaryTerritorialControl": [
+            {
+                "name": "Iron Unification",
+                "description": "Bring surrounding regions under one banner—by blade, treaty, or fear—to create a single order."
+            },
+            {
+                "name": "Strategic Intimidation",
+                "description": "Ensure no one dares challenge your might through demonstrations of force or precision raids."
+            },
+            {
+                "name": "Protective Dominion",
+                "description": "Spread your control under the guise of peacekeeping or guarding against chaos/anarchy."
+            }
+        ],
+        "SpiritualReligiousFulfillment": [
+            {
+                "name": "Universal Revelation",
+                "description": "Spread your divine truth until no realm remains untouched by your faith."
+            },
+            {
+                "name": "Prophetic Fulfillment",
+                "description": "Carry out ancient prophecies to legitimize your regime and inspire believers across borders."
+            },
+            {
+                "name": "Sacred Authority",
+                "description": "Build holy sites or relic networks that give your leaders moral or mystical superiority."
+            }
+        ],
+        "DiplomaticSupremacy": [
+            {
+                "name": "Global Architect",
+                "description": "Be the founding voice or secret hand guiding a stable international order."
+            },
+            {
+                "name": "Alliance Web",
+                "description": "Weave a net of marriages, treaties, and mutual pacts so tightly that no war occurs without your blessing."
+            },
+            {
+                "name": "Moral Vanguard",
+                "description": "Earn the position as the world's ethical compass, settling disputes and delivering justice."
+            }
+        ],
+        "EconomicMastery": [
+            {
+                "name": "Trade Dominance",
+                "description": "Control major trade routes, guilds, or ports, making the flow of goods your greatest weapon."
+            },
+            {
+                "name": "Credit Empire",
+                "description": "Bind other governments through loans, reparations, and economic “gifts” that demand political loyalty."
+            },
+            {
+                "name": "Production Supremacy",
+                "description": "Outbuild, outcraft, and outsupply all others, so even your enemies depend on your wares."
+            }
+        ]
+    }
+}

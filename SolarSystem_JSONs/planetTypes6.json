@@ -1,0 +1,75 @@
+{
+	"planetTypes": [
+		{
+			"type": "Air",
+			"planetSubType": [
+				"Gas Giant",
+				"Earth-like with Floating Islands",
+				"Eternal Storms"
+			]
+		},
+		{
+			"type": "Earth",
+			"planetSubType": [
+				"Mostly rock and stone", 
+				"Landmass surrounds Ocean", 
+				"High concentration of crystals and metals"
+			]
+		},
+		{
+			"type": "Fire",
+			"planetSubType": [
+				"Star-like", 
+				"Lava Oceans", 
+				"Volcanic Lands"
+			]
+		},
+		{
+			"type": "Water",
+			"planetSubType": [
+				"Water World", 
+				"Large Oceans with Small Islands", 
+				"Frozen Ice World"
+			]
+		},
+		{
+			"type": "Light",
+			"planetSubType": [
+				"Eternal Daytime", 
+				"All objects emit Light", 
+				"Lots of naturally occurring resources produces light"
+			]
+		},
+		{
+			"type": "Dark",
+			"planetSubType": [
+				"Eternal Nighttime", 
+				"Light sources are less effective while near the planet", 
+				"Lots of naturally occurring resources produces darkness"
+			]
+		},
+		{
+			"type": "Holy",
+			"planetSubType": [
+				"Hallowed/Consecrated Lands", 
+				"Holy Magic is empowered"
+			]
+		},
+		{
+			"type": "Unholy",
+			"planetSubType": [
+				"Desecrated Lands", 
+				"Fiendish Magic is empowered"
+			]
+		},
+		{
+			"type": "Dead",
+			"planetSubType": [
+				"Lifeless Wasteland", 
+				"Shattered World", 
+				"Undeath emenates from the world"
+			]
+		}
+
+	]
+}
