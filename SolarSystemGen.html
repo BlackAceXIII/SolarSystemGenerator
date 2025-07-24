@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" type="text/css" href="attempt09.css">
+    </head>
+    <body>
+        <h1>H1</h1>
+        <h2>H2</h2>
+        <p>Click on the x button in the top right corner to close the current tab:</p>
+        <p id="FILLER">FILLER</p>
+        <!-- Tabs -->
+        <div class="tab">
+            <button class="tablinks" onclick="openSector(event, 'S.00')" id="defaultOpen">Sector 00</button>
+            <button class="tablinks" onclick="openSector(event, 'S.01')">Sector 01</button>
+            <button class="tablinks" onclick="openSector(event, 'S.02')">Sector 02</button>
+            <button class="tablinks" onclick="openSector(event, 'S.03')">Sector 03</button>
+            <button class="tablinks" onclick="openSector(event, 'S.04')">Sector 04</button>
+            <button class="tablinks" onclick="openSector(event, 'S.05')">Sector 05</button>
+            <button class="tablinks" onclick="openSector(event, 'S.06')">Sector 06</button>
+            <button class="tablinks" onclick="openSector(event, 'S.07')">Sector 07</button>
+            <button class="tablinks" onclick="openSector(event, 'S.08')">Sector 08</button>
+            <button class="tablinks" onclick="openSector(event, 'S.09')">Sector 09</button>
+        </div>
+
+        <!-- Reroll button -->
+        <div>
+            <button class="button button1" onclick="rerollAll()">Reroll All</button>
+        </div>
+
+        <!-- Tab content -->
+        <!-- Sector 00 -->
+		<div id="S.00" class="tabcontent">
+			<span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+			<h3>Sector 00</h3>
+			<!-- Element Description -->
+			<h4>Element: <span id="random-element-S.00"></span></h4>
+            <!-- SubType Description -->
+			<h4>SubType: <span id="random-subtype-S.00"></span></h4>
+			<!-- Creature Type Description -->
+			<h4>Creature Type: <span id="random-creature-S.00"></span></h4>
+			<!-- Random button -->
+			<button id="generate-button-S.00">Random</button>
+		</div>
+		
+		<!-- Sector 01 -->
+		<div id="S.01" class="tabcontent">
+			<span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+			<h3>Sector 01</h3>
+			<!-- Element Description -->
+			<h4>Element: <span id="random-element-S.01"></span></h4>
+            <!-- SubType Description -->
+			<h4>SubType: <span id="random-subtype-S.01"></span></h4>
+			<!-- Creature Type Description -->
+			<h4>Creature Type: <span id="random-creature-S.01"></span></h4>
+			<!-- Random button -->
+			<button id="generate-button-S.01">Random</button>
+		</div>
+		
+		<!-- Sector 02 -->
+		<div id="S.02" class="tabcontent">
+			<span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+			<h3>Sector 02</h3>
+			<!-- Element Description -->
+			<h4>Element: <span id="random-element-S.02"></span></h4>
+            <!-- SubType Description -->
+			<h4>SubType: <span id="random-subtype-S.02"></span></h4>
+			<!-- Creature Type Description -->
+			<h4>Creature Type: <span id="random-creature-S.02"></span></h4>
+			<!-- Random button -->
+			<button id="generate-button-S.02">Random</button>
+		</div>
+		
+		<!-- Sector 03 -->
+		<div id="S.03" class="tabcontent">
+			<span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+			<h3>Sector 03</h3>
+			<!-- Element Description -->
+			<h4>Element: <span id="random-element-S.03"></span></h4>
+            <!-- SubType Description -->
+			<h4>SubType: <span id="random-subtype-S.03"></span></h4>
+			<!-- Creature Type Description -->
+			<h4>Creature Type: <span id="random-creature-S.03"></span></h4>
+			<!-- Random button -->
+			<button id="generate-button-S.03">Random</button>
+		</div>
+		
+		<!-- Sector 04 -->
+		<div id="S.04" class="tabcontent">
+			<span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+			<h3>Sector 04</h3>
+			<!-- Element Description -->
+			<h4>Element: <span id="random-element-S.04"></span></h4>
+            <!-- SubType Description -->
+			<h4>SubType: <span id="random-subtype-S.04"></span></h4>
+			<!-- Creature Type Description -->
+			<h4>Creature Type: <span id="random-creature-S.04"></span></h4>
+			<!-- Random button -->
+			<button id="generate-button-S.04">Random</button>
+		</div>
+		
+		<!-- Sector 05 -->
+		<div id="S.05" class="tabcontent">
+			<span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+			<h3>Sector 05</h3>
+			<!-- Element Description -->
+			<h4>Element: <span id="random-element-S.05"></span></h4>
+            <!-- SubType Description -->
+			<h4>SubType: <span id="random-subtype-S.05"></span></h4>
+			<!-- Creature Type Description -->
+			<h4>Creature Type: <span id="random-creature-S.05"></span></h4>
+			<!-- Random button -->
+			<button id="generate-button-S.05">Random</button>
+		</div>
+		
+		<!-- Sector 06 -->
+		<div id="S.06" class="tabcontent">
+			<span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+			<h3>Sector 06</h3>
+			<!-- Element Description -->
+			<h4>Element: <span id="random-element-S.06"></span></h4>
+            <!-- SubType Description -->
+			<h4>SubType: <span id="random-subtype-S.06"></span></h4>
+			<!-- Creature Type Description -->
+			<h4>Creature Type: <span id="random-creature-S.06"></span></h4>
+			<!-- Random button -->
+			<button id="generate-button-S.06">Random</button>
+		</div>
+		
+		<!-- Sector 07 -->
+		<div id="S.07" class="tabcontent">
+			<span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+			<h3>Sector 07</h3>
+			<!-- Element Description -->
+			<h4>Element: <span id="random-element-S.07"></span></h4>
+            <!-- SubType Description -->
+			<h4>SubType: <span id="random-subtype-S.07"></span></h4>
+			<!-- Creature Type Description -->
+			<h4>Creature Type: <span id="random-creature-S.07"></span></h4>
+			<!-- Random button -->
+			<button id="generate-button-S.07">Random</button>
+		</div>
+		
+		<!-- Sector 08 -->
+		<div id="S.08" class="tabcontent">
+			<span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+			<h3>Sector 08</h3>
+			<!-- Element Description -->
+			<h4>Element: <span id="random-element-S.08"></span></h4>
+            <!-- SubType Description -->
+			<h4>SubType: <span id="random-subtype-S.08"></span></h4>
+			<!-- Creature Type Description -->
+			<h4>Creature Type: <span id="random-creature-S.08"></span></h4>
+			<!-- Random button -->
+			<button id="generate-button-S.08">Random</button>
+		</div>
+		
+		<!-- Sector 09 -->
+		<div id="S.09" class="tabcontent">
+			<span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+			<h3>Sector 09</h3>
+			<!-- Element Description -->
+			<h4>Element: <span id="random-element-S.09"></span></h4>
+            <!-- SubType Description -->
+			<h4>SubType: <span id="random-subtype-S.09"></span></h4>
+			<!-- Creature Type Description -->
+			<h4>Creature Type: <span id="random-creature-S.09"></span></h4>
+			<!-- Random button -->
+			<button id="generate-button-S.09">Random</button>
+		</div>
+
+
+        <script type="text/javascript" src="attempt09.js"></script>
+        <script type="application/json" src="../JSON_Folder/planetTypes.json"></script>
+    </body>
+</html>
