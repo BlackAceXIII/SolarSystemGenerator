@@ -14,7 +14,7 @@ const sectorData = {
 };
 
 async function fetchData() {
-  const response = await fetch('../JSON_Folder/planetTypes.json'); //delayed fetch
+  const response = await fetch('../SolarSystemGenerator/SolarSystem_JSONs/planetTypes.json'); //delayed fetch
   console.log(response);
   data = await response.json(); //This stores the info from the JSON so the generate function can use it and the button can reference it.
   return data;
