@@ -1,4 +1,12 @@
 let data;
+const celestialBody = [
+        "Planet",
+        "Star",
+        "Astroid Belt",
+        "Mysterious Wreckage",
+        "Space Station",
+        "Empty Space"
+];
 
 const sectorData = {
   "S.00": { pType: "" },
