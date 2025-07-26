@@ -54,7 +54,7 @@ document.querySelectorAll('button').forEach(button => {
     handleButtonClick(this.id);
   });
 });
-
+/*
 function handleButtonClick(id) {
   switch (id) {
     case 'generate-button-S.00':
@@ -89,7 +89,15 @@ function handleButtonClick(id) {
       break;
   }
 }
-
+*/
+// This function handles the button clicks and calls generateElement with the correct sector name
+// It uses a regular expression to match the button ID and extract the sector name
+function handleButtonClick(id) {
+  const match = id.match(/^generate-button-(S\.\d{2})$/);
+  if (match) {
+    generateElement(match[1], data.planetTypes);
+  }
+}
 function generateElement(sectorName, planetTypes) {
   let randomElement = Math.floor(Math.random() * data.planetTypes.length);
   let elementType = Math.floor(Math.random() * data.planetTypes[randomElement].planetSubType.length);
