@@ -115,6 +115,7 @@ function generateSector(sectorName) {
   }
   // Display the sector type in the relevant element
   document.getElementById(`sector-type-${sectorName}`).innerText = sectorType;
+  sectorData[sectorName].pType = sectorType; // Store the sector type in the sectorData object
   
   switch (sectorType) {
     case "Planet":
@@ -153,10 +154,9 @@ function generatePlanet(sectorName, planetTypes) {
 
   // Display the result in the relevant sector element
   document.getElementById(`random-element-${sectorName}`).innerText = data.planetTypes[randomElement].type + ' (' + randomElement + ')';
-
+  
   // Display the result in the relevant sector subtype
   document.getElementById(`random-subtype-${sectorName}`).innerText = data.planetTypes[randomElement].planetSubType[elementType];
-
 
   let creatureType = data.planetTypes[randomElement].creatureType.join('\n\n'); //A simpler way to do it but less formatting options 
   // Display the result in the relevant sector creatures
@@ -170,12 +170,12 @@ function generateStar(sectorName, starTypes) {
 
 function generateAsteroidBelt(sectorName, asteroidBeltTypes) {
   let randomBelt = Math.floor(Math.random() * data.asteroidBeltTypes.length);
-  document.getElementById(`random-asteroid-belt-${sectorName}`).innerText = data.asteroidBeltTypes[randomBelt];
+  document.getElementById(`random-asteroid-composition-${sectorName}`).innerText = data.asteroidBeltTypes[randomBelt];
 };
 
 function generateWreckage(sectorName, wreckageTypes) {
   let randomWreckage = Math.floor(Math.random() * data.wreckageTypes.length);
-  document.getElementById(`random-wreckage-${sectorName}`).innerText = data.wreckageTypes[randomWreckage];
+  document.getElementById(`random-wreckage-type-${sectorName}`).innerText = data.wreckageTypes[randomWreckage];
 };
 
 function generateSpaceStation(sectorName, spaceStationTypes) {
