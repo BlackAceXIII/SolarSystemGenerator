@@ -87,42 +87,6 @@ document.querySelectorAll('button').forEach(button => {
     handleButtonClick(this.id);
   });
 });
-/*
-function handleButtonClick(id) {
-  switch (id) {
-    case 'generate-button-S.00':
-      generatePlanet("S.00", data.planetTypes);
-      break;
-    case 'generate-button-S.01':
-      generatePlanet("S.01", data.planetTypes);
-      break;
-    case 'generate-button-S.02':
-      generatePlanet("S.02", data.planetTypes);
-      break;
-    case 'generate-button-S.03':
-      generatePlanet("S.03", data.planetTypes);
-      break;
-    case 'generate-button-S.04':
-      generatePlanet("S.04", data.planetTypes);
-      break;
-    case 'generate-button-S.05':
-      generatePlanet("S.05", data.planetTypes);
-      break;
-    case 'generate-button-S.06':
-      generatePlanet("S.06", data.planetTypes);
-      break;
-    case 'generate-button-S.07':
-      generatePlanet("S.07", data.planetTypes);
-      break;
-    case 'generate-button-S.08':
-      generatePlanet("S.08", data.planetTypes);
-      break;
-    case 'generate-button-S.09':
-      generatePlanet("S.09", data.planetTypes);
-      break;
-  }
-}
-*/
 // This function handles the button clicks and calls generatePlanet with the correct sector name
 // It uses a regular expression to match the button ID and extract the sector name
 function handleButtonClick(id) {
@@ -131,6 +95,7 @@ function handleButtonClick(id) {
     generateSector(match[1]);
   }
 };
+
 function generateSector(sectorName) {
   //Hides all sector info elements before generating a new one
   document.getElementById(`planet-info-${sectorName}`).style.display = "none";
@@ -181,6 +146,7 @@ function generateSector(sectorName) {
       break;
   }
 };
+
 function generatePlanet(sectorName, planetTypes) {
   let randomElement = Math.floor(Math.random() * data.planetTypes.length);
   let elementType = Math.floor(Math.random() * data.planetTypes[randomElement].planetSubType.length);
@@ -196,18 +162,22 @@ function generatePlanet(sectorName, planetTypes) {
   // Display the result in the relevant sector creatures
   document.getElementById(`random-creature-${sectorName}`).innerText = creatureType;
 };
+
 function generateStar(sectorName, starTypes) {
   let randomStar = Math.floor(Math.random() * data.starTypes.length);
   document.getElementById(`random-star-type-${sectorName}`).innerText = starTypes[randomStar];
 };
+
 function generateAsteroidBelt(sectorName, asteroidBeltTypes) {
   let randomBelt = Math.floor(Math.random() * data.asteroidBeltTypes.length);
   document.getElementById(`random-asteroid-belt-${sectorName}`).innerText = data.asteroidBeltTypes[randomBelt];
 };
+
 function generateWreckage(sectorName, wreckageTypes) {
   let randomWreckage = Math.floor(Math.random() * data.wreckageTypes.length);
   document.getElementById(`random-wreckage-${sectorName}`).innerText = data.wreckageTypes[randomWreckage];
 };
+
 function generateSpaceStation(sectorName, spaceStationTypes) {
   let randomStation = Math.floor(Math.random() * data.spaceStationTypes.stationRoles.length);
   let stationRole = data.spaceStationTypes.stationRoles[randomStation];
@@ -216,6 +186,7 @@ function generateSpaceStation(sectorName, spaceStationTypes) {
   document.getElementById(`random-station-role-${sectorName}`).innerText = stationRole;
   document.getElementById(`random-station-condition-${sectorName}`).innerText = stationCondition;
 };
+
 function generateEmptySpace(sectorName) {
   // Display a message indicating that this sector is empty
   document.getElementById(`random-empty-notes-${sectorName}`).innerText = "Nothing of interest detected in this sector.";
