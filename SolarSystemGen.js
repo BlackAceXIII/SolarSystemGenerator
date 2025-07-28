@@ -51,7 +51,7 @@ async function fetchData() {
     spaceStationTypes
   };
   return data;
-};
+}
 const sectorTypeToIdPrefix = {
   "Planet": "planet",
   "Star": "star",
@@ -73,20 +73,20 @@ function openSector(evt, sectorName) {
   }
   document.getElementById(sectorName).style.display = "block";
   evt.currentTarget.className += " active";
-};
+}
 
 function rerollAll() {
   for (let i = 0; i <= 9; i++) {
     generateSector(`S.0${i}`);
   }
   return;
-};
+}
 
 document.querySelectorAll('button').forEach(button => {
   button.addEventListener('click', function() {
     handleButtonClick(this.id);
   });
-});
+})
 // This function handles the button clicks and calls generatePlanet with the correct sector name
 // It uses a regular expression to match the button ID and extract the sector name
 function handleButtonClick(id) {
@@ -94,7 +94,7 @@ function handleButtonClick(id) {
   if (match) {
     generateSector(match[1]);
   }
-};
+}
 
 function generateSector(sectorName) {
   //Hides all sector info elements before generating a new one
@@ -146,7 +146,7 @@ function generateSector(sectorName) {
       // fallback if needed
       break;
   }
-};
+}
 
 function generatePlanet(sectorName, planetTypes) {
   let randomElement = Math.floor(Math.random() * data.planetTypes.length);
@@ -161,36 +161,36 @@ function generatePlanet(sectorName, planetTypes) {
   let creatureType = data.planetTypes[randomElement].creatureType.join('\n\n'); //A simpler way to do it but less formatting options 
   // Display the result in the relevant sector creatures
   document.getElementById(`random-creature-${sectorName}`).innerText = creatureType;
-};
+}
 
 function generateStar(sectorName, starTypes) {
-  let randomStar = Math.floor(Math.random() * data.starTypes.length);
-  document.getElementById(`random-star-type-${sectorName}`).innerText = starTypes[randomStar];
-};
+  let randomStar = Math.floor(Math.random() * data.starTypes.starType.length);
+  document.getElementById(`random-star-type-${sectorName}`).innerText = data.starTypes.starType[randomStar];
+}
 
 function generateAsteroidBelt(sectorName, asteroidBeltTypes) {
-  let randomBelt = Math.floor(Math.random() * data.asteroidBeltTypes.length);
-  document.getElementById(`random-asteroid-composition-${sectorName}`).innerText = data.asteroidBeltTypes[randomBelt];
-};
+  let randomBelt = Math.floor(Math.random() * data.asteroidBeltTypes.AsteroidBeltComposition.length);
+  document.getElementById(`random-asteroid-composition-${sectorName}`).innerText = data.asteroidBeltTypes.AsteroidBeltComposition[randomBelt];
+}
 
 function generateWreckage(sectorName, wreckageTypes) {
-  let randomWreckage = Math.floor(Math.random() * data.wreckageTypes.length);
-  document.getElementById(`random-wreckage-type-${sectorName}`).innerText = data.wreckageTypes[randomWreckage];
-};
+  let randomWreckage = Math.floor(Math.random() * data.wreckageTypes.mysteryWreck.length);
+  document.getElementById(`random-wreckage-type-${sectorName}`).innerText = data.wreckageTypes.mysteryWreck[randomWreckage];
+}
 
 function generateSpaceStation(sectorName, spaceStationTypes) {
-  let randomStation = Math.floor(Math.random() * data.spaceStationTypes.stationRoles.length);
-  let stationRole = data.spaceStationTypes.stationRoles[randomStation];
+  let randomStation = Math.floor(Math.random() * data.spaceStationTypes.stationRole.length);
+  let stationRole = data.spaceStationTypes.stationRole[randomStation];
   let randomStationCondition = Math.floor(Math.random() * data.spaceStationTypes.condition.length);
   let stationCondition = data.spaceStationTypes.condition[randomStationCondition];
   document.getElementById(`random-station-role-${sectorName}`).innerText = stationRole;
   document.getElementById(`random-station-condition-${sectorName}`).innerText = stationCondition;
-};
+}
 
 function generateEmptySpace(sectorName) {
   // Display a message indicating that this sector is empty
   document.getElementById(`random-empty-notes-${sectorName}`).innerText = "Nothing of interest detected in this sector.";
-};
+}
 
 fetchData();
 
