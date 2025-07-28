@@ -2,7 +2,7 @@ let data;
 const celestialBody = [
         "Planet",
         "Star",
-        "Astroid Belt",
+        "Asteroid Belt",
         "Mysterious Wreckage",
         "Space Station",
         "Empty Space"
@@ -22,9 +22,34 @@ const sectorData = {
 };
 
 async function fetchData() {
-  const response = await fetch('./SolarSystem_JSONs/planetTypes.json'); //delayed fetch
-  console.log(response);
-  data = await response.json(); //This stores the info from the JSON so the generate function can use it and the button can reference it.
+  // Fetch planet types (for "Planet")
+  const planetResponse = await fetch('./SolarSystem_JSONs/planetTypes.json');
+  const planetTypes = await planetResponse.json();
+
+  // Fetch star types (for "Star")
+  const starResponse = await fetch('./SolarSystem_JSONs/starTypes.json');
+  const starTypes = await starResponse.json();
+
+  // Fetch asteroid belt types (for "Asteroid Belt")
+  const asteroidResponse = await fetch('./SolarSystem_JSONs/asteroidBeltTypes.json');
+  const asteroidBeltTypes = await asteroidResponse.json();
+
+  // Fetch mysterious wreckage types (for "Mysterious Wreckage")
+  const wreckageResponse = await fetch('./SolarSystem_JSONs/wreckageTypes.json');
+  const wreckageTypes = await wreckageResponse.json();
+
+  // Fetch space station types (for "Space Station")
+  const stationResponse = await fetch('./SolarSystem_JSONs/spaceStationTypes.json');
+  const spaceStationTypes = await stationResponse.json();
+
+  // Store all data in a single object for easy access
+  data = {
+    planetTypes,
+    starTypes,
+    asteroidBeltTypes,
+    wreckageTypes,
+    spaceStationTypes
+  };
   return data;
 }
 
@@ -44,7 +69,7 @@ function openSector(evt, sectorName) {
 
 function rerollAll() {
   for (let i = 0; i <= 9; i++) {
-    generateElement(`S.0${i}`, data.planetTypes);
+    generateSector(`S.0${i}`);
   }
   return;
 }
@@ -58,47 +83,75 @@ document.querySelectorAll('button').forEach(button => {
 function handleButtonClick(id) {
   switch (id) {
     case 'generate-button-S.00':
-      generateElement("S.00", data.planetTypes);
+      generatePlanet("S.00", data.planetTypes);
       break;
     case 'generate-button-S.01':
-      generateElement("S.01", data.planetTypes);
+      generatePlanet("S.01", data.planetTypes);
       break;
     case 'generate-button-S.02':
-      generateElement("S.02", data.planetTypes);
+      generatePlanet("S.02", data.planetTypes);
       break;
     case 'generate-button-S.03':
-      generateElement("S.03", data.planetTypes);
+      generatePlanet("S.03", data.planetTypes);
       break;
     case 'generate-button-S.04':
-      generateElement("S.04", data.planetTypes);
+      generatePlanet("S.04", data.planetTypes);
       break;
     case 'generate-button-S.05':
-      generateElement("S.05", data.planetTypes);
+      generatePlanet("S.05", data.planetTypes);
       break;
     case 'generate-button-S.06':
-      generateElement("S.06", data.planetTypes);
+      generatePlanet("S.06", data.planetTypes);
       break;
     case 'generate-button-S.07':
-      generateElement("S.07", data.planetTypes);
+      generatePlanet("S.07", data.planetTypes);
       break;
     case 'generate-button-S.08':
-      generateElement("S.08", data.planetTypes);
+      generatePlanet("S.08", data.planetTypes);
       break;
     case 'generate-button-S.09':
-      generateElement("S.09", data.planetTypes);
+      generatePlanet("S.09", data.planetTypes);
       break;
   }
 }
 */
-// This function handles the button clicks and calls generateElement with the correct sector name
+// This function handles the button clicks and calls generatePlanet with the correct sector name
 // It uses a regular expression to match the button ID and extract the sector name
 function handleButtonClick(id) {
   const match = id.match(/^generate-button-(S\.\d{2})$/);
   if (match) {
-    generateElement(match[1], data.planetTypes);
+    generateSector(match[1]);
   }
 }
-function generateElement(sectorName, planetTypes) {
+function generateSector(sectorName) {
+  let sectorRNG = Math.floor(Math.random() * celestialBody.length);
+  let sectorType = celestialBody[sectorRNG];
+  console.log(`Generated sector ${sectorName}: ${sectorType}`);
+  switch (sectorType) {
+    case "Planet":
+      generatePlanet(sectorName, data.planetTypes);
+      break;
+    case "Star":
+      generateStar(sectorName);
+      break;
+    case "Asteroid Belt":
+      generateAsteroidBelt(sectorName);
+      break;
+    case "Mysterious Wreckage":
+      generateWreckage(sectorName);
+      break;
+    case "Space Station":
+      generateSpaceStation(sectorName);
+      break;
+    case "Empty Space":
+      generateEmptySpace(sectorName);
+      break;
+    default:
+      // fallback if needed
+      break;
+  }
+}
+function generatePlanet(sectorName, planetTypes) {
   let randomElement = Math.floor(Math.random() * data.planetTypes.length);
   let elementType = Math.floor(Math.random() * data.planetTypes[randomElement].planetSubType.length);
 
