@@ -34,9 +34,11 @@ body {font-family: Arial;}
 /* Style the tab content */
 .tabcontent {
   display: none;
-  padding: 6px 12px;
+  padding: 15px;
   border: 1px solid #ccc;
   border-top: none;
+  min-height: 300px;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 /* Style the close button */
@@ -63,8 +65,44 @@ body {
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
 }
 .button1:hover {
   background-color: #f00;
   clip-path: polygon(25% 6.7%, 75% 6.7%, 100% 50%, 75% 93.3%, 25% 93.3%, 0% 50%);
+}
+#planet-info-S\.00, #star-info-S\.00, #asteroid-info-S\.00,
+#wreckage-info-S\.00, #station-info-S\.00, #empty-info-S\.00,
+[id$="-info-S.01"], [id$="-info-S.02"], [id$="-info-S.03"],
+[id$="-info-S.04"], [id$="-info-S.05"], [id$="-info-S.06"],
+[id$="-info-S.07"], [id$="-info-S.08"], [id$="-info-S.09"] {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+/* Color coding for different celestial types */
+[id^="planet-info"] {
+  border-left: 5px solid #4CAF50; /* Green */
+}
+
+[id^="star-info"] {
+  border-left: 5px solid #FFC107; /* Yellow */
+}
+
+[id^="asteroid-info"] {
+  border-left: 5px solid #795548; /* Brown */
+}
+
+[id^="wreckage-info"] {
+  border-left: 5px solid #9C27B0; /* Purple */
+}
+
+[id^="station-info"] {
+  border-left: 5px solid #2196F3; /* Blue */
+}
+
+[id^="empty-info"] {
+  border-left: 5px solid #9E9E9E; /* Gray */
 }

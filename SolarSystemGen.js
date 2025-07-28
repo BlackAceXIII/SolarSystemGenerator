@@ -51,7 +51,15 @@ async function fetchData() {
     spaceStationTypes
   };
   return data;
-}
+};
+const sectorTypeToIdPrefix = {
+  "Planet": "planet",
+  "Star": "star",
+  "Asteroid Belt": "asteroid",
+  "Mysterious Wreckage": "wreckage",
+  "Space Station": "station",
+  "Empty Space": "empty"
+};
 
 function openSector(evt, sectorName) {
   var i, tabcontent, tablinks;
@@ -65,14 +73,14 @@ function openSector(evt, sectorName) {
   }
   document.getElementById(sectorName).style.display = "block";
   evt.currentTarget.className += " active";
-}
+};
 
 function rerollAll() {
   for (let i = 0; i <= 9; i++) {
     generateSector(`S.0${i}`);
   }
   return;
-}
+};
 
 document.querySelectorAll('button').forEach(button => {
   button.addEventListener('click', function() {
@@ -122,35 +130,57 @@ function handleButtonClick(id) {
   if (match) {
     generateSector(match[1]);
   }
-}
+};
 function generateSector(sectorName) {
+  //Hides all sector info elements before generating a new one
+  document.getElementById(`planet-info-${sectorName}`).style.display = "none";
+  document.getElementById(`star-info-${sectorName}`).style.display = "none";
+  document.getElementById(`asteroid-info-${sectorName}`).style.display = "none";
+  document.getElementById(`wreckage-info-${sectorName}`).style.display = "none";
+  document.getElementById(`station-info-${sectorName}`).style.display = "none";
+  document.getElementById(`empty-info-${sectorName}`).style.display = "none";
+
   let sectorRNG = Math.floor(Math.random() * celestialBody.length);
   let sectorType = celestialBody[sectorRNG];
   console.log(`Generated sector ${sectorName}: ${sectorType}`);
+  // Use the mapping to get the correct prefix
+  const idPrefix = sectorTypeToIdPrefix[sectorType];
+  if (idPrefix) {
+    document.getElementById(`${idPrefix}-info-${sectorName}`).style.display = "block";
+  }
+  // Display the sector type in the relevant element
+  document.getElementById(`sector-type-${sectorName}`).innerText = sectorType;
+  
   switch (sectorType) {
     case "Planet":
+      document.getElementById(`planet-info-${sectorName}`).style.display = "block";
       generatePlanet(sectorName, data.planetTypes);
       break;
     case "Star":
-      generateStar(sectorName);
+      document.getElementById(`star-info-${sectorName}`).style.display = "block";
+      generateStar(sectorName, data.starTypes);
       break;
     case "Asteroid Belt":
-      generateAsteroidBelt(sectorName);
+      document.getElementById(`asteroid-info-${sectorName}`).style.display = "block";
+      generateAsteroidBelt(sectorName, data.asteroidBeltTypes);
       break;
     case "Mysterious Wreckage":
-      generateWreckage(sectorName);
+      document.getElementById(`wreckage-info-${sectorName}`).style.display = "block";
+      generateWreckage(sectorName, data.wreckageTypes);
       break;
     case "Space Station":
-      generateSpaceStation(sectorName);
+      document.getElementById(`station-info-${sectorName}`).style.display = "block";
+      generateSpaceStation(sectorName, data.stationTypes);
       break;
     case "Empty Space":
+      document.getElementById(`empty-info-${sectorName}`).style.display = "block";
       generateEmptySpace(sectorName);
       break;
     default:
       // fallback if needed
       break;
   }
-}
+};
 function generatePlanet(sectorName, planetTypes) {
   let randomElement = Math.floor(Math.random() * data.planetTypes.length);
   let elementType = Math.floor(Math.random() * data.planetTypes[randomElement].planetSubType.length);
@@ -165,7 +195,31 @@ function generatePlanet(sectorName, planetTypes) {
   let creatureType = data.planetTypes[randomElement].creatureType.join('\n\n'); //A simpler way to do it but less formatting options 
   // Display the result in the relevant sector creatures
   document.getElementById(`random-creature-${sectorName}`).innerText = creatureType;
-}
+};
+function generateStar(sectorName, starTypes) {
+  let randomStar = Math.floor(Math.random() * data.starTypes.length);
+  document.getElementById(`random-star-type-${sectorName}`).innerText = starTypes[randomStar];
+};
+function generateAsteroidBelt(sectorName, asteroidBeltTypes) {
+  let randomBelt = Math.floor(Math.random() * data.asteroidBeltTypes.length);
+  document.getElementById(`random-asteroid-belt-${sectorName}`).innerText = data.asteroidBeltTypes[randomBelt];
+};
+function generateWreckage(sectorName, wreckageTypes) {
+  let randomWreckage = Math.floor(Math.random() * data.wreckageTypes.length);
+  document.getElementById(`random-wreckage-${sectorName}`).innerText = data.wreckageTypes[randomWreckage];
+};
+function generateSpaceStation(sectorName, spaceStationTypes) {
+  let randomStation = Math.floor(Math.random() * data.spaceStationTypes.stationRoles.length);
+  let stationRole = data.spaceStationTypes.stationRoles[randomStation];
+  let randomStationCondition = Math.floor(Math.random() * data.spaceStationTypes.condition.length);
+  let stationCondition = data.spaceStationTypes.condition[randomStationCondition];
+  document.getElementById(`random-station-role-${sectorName}`).innerText = stationRole;
+  document.getElementById(`random-station-condition-${sectorName}`).innerText = stationCondition;
+};
+function generateEmptySpace(sectorName) {
+  // Display a message indicating that this sector is empty
+  document.getElementById(`random-empty-notes-${sectorName}`).innerText = "Nothing of interest detected in this sector.";
+};
 
 fetchData();
 
