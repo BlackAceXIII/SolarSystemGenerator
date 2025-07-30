@@ -177,6 +177,46 @@ function generatePlanet(sectorName) {
   let creatureType = data.planetTypes.planetTypes[randomElement].creatureType.join('\n\n'); //A simpler way to do it but less formatting options
   // Display the result in the relevant sector creatures
   document.getElementById(`random-creature-${sectorName}`).innerText = creatureType;
+
+  // --- Dominant Intelligent Lifeforms ---
+  let randomIntType = Math.floor(Math.random() * data.dominantIntLife.intLife.length);
+  let intTypeObj = data.dominantIntLife.intLife[randomIntType];
+  let randomIntLifeform = Math.floor(Math.random() * intTypeObj.intLifeform.length);
+  let intLifeType = intTypeObj.intLifeType;
+  let intLifeform = intTypeObj.intLifeform[randomIntLifeform];
+  document.getElementById(`dominant-int-life-${sectorName}`).innerText = `${intLifeType}: ${intLifeform}`;
+
+  // --- Tech Era ---
+  let randomTechEra = Math.floor(Math.random() * data.techEra.TechLevel.length);
+  let techEra = data.techEra.TechLevel[randomTechEra];
+  document.getElementById(`tech-era-${sectorName}`).innerText = techEra;
+
+  // --- Dominant Government Adjective ---
+  // Flatten all adjective arrays
+  let govAdjArrays = Object.values(data.govAdj.GovernmentAdjectives);
+  let allGovAdjs = govAdjArrays.flat();
+  let randomGovAdj = Math.floor(Math.random() * allGovAdjs.length);
+  let govAdjObj = allGovAdjs[randomGovAdj];
+  document.getElementById(`gov-adj-${sectorName}`).innerText = govAdjObj.adjective;
+  document.getElementById(`gov-adj-desc-${sectorName}`).innerText = `${govAdjObj.adjective}: ${govAdjObj.description}`;
+
+  // --- Dominant Government Type ---
+  let govTypesArr = data.govTypes.GovernmentTypes;
+  let randomGovType = Math.floor(Math.random() * govTypesArr.length);
+  let govTypeObj = govTypesArr[randomGovType];
+  document.getElementById(`gov-type-${sectorName}`).innerText = govTypeObj.name;
+  document.getElementById(`gov-type-desc-${sectorName}`).innerText = `${govTypeObj.name}: ${govTypeObj.description}`;
+
+  // --- Government Objective ---
+  let govObjCategories = Object.keys(data.govObj.FactionalObjectives);
+  let randomObjCatIdx = Math.floor(Math.random() * govObjCategories.length);
+  let objCatName = govObjCategories[randomObjCatIdx];
+  let objCatArr = data.govObj.FactionalObjectives[objCatName];
+  let randomObjIdx = Math.floor(Math.random() * objCatArr.length);
+  let obj = objCatArr[randomObjIdx];
+  document.getElementById(`gov-obj-category-${sectorName}`).innerText = `Category: ${objCatName}`;
+  document.getElementById(`gov-obj-name-${sectorName}`).innerText = `Objective: ${obj.name}`;
+  document.getElementById(`gov-obj-desc-${sectorName}`).innerText = `Description: ${obj.description}`;
 }
 
 function generateStar(sectorName) {

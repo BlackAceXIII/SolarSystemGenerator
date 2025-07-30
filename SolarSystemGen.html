@@ -1,36 +1,36 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" type="text/css" href="SolarSystemGen.css">
-    </head>
-    <body>
-        <h1>H1</h1>
-        <h2>H2</h2>
-        <p>Click on the x button in the top right corner to close the current tab:</p>
-        <p id="FILLER">FILLER</p>
-        <!-- Tabs -->
-        <div class="tab">
-            <button class="tablinks" onclick="openSector(event, 'S.00')" id="defaultOpen">Sector 00</button>
-            <button class="tablinks" onclick="openSector(event, 'S.01')">Sector 01</button>
-            <button class="tablinks" onclick="openSector(event, 'S.02')">Sector 02</button>
-            <button class="tablinks" onclick="openSector(event, 'S.03')">Sector 03</button>
-            <button class="tablinks" onclick="openSector(event, 'S.04')">Sector 04</button>
-            <button class="tablinks" onclick="openSector(event, 'S.05')">Sector 05</button>
-            <button class="tablinks" onclick="openSector(event, 'S.06')">Sector 06</button>
-            <button class="tablinks" onclick="openSector(event, 'S.07')">Sector 07</button>
-            <button class="tablinks" onclick="openSector(event, 'S.08')">Sector 08</button>
-            <button class="tablinks" onclick="openSector(event, 'S.09')">Sector 09</button>
-        </div>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" type="text/css" href="SolarSystemGen.css">
+	</head>
+	<body>
+		<h1>H1</h1>
+		<h2>H2</h2>
+		<p>Click on the x button in the top right corner to close the current tab:</p>
+		<p id="FILLER">FILLER</p>
+		<!-- Tabs -->
+		<div class="tab">
+			<button class="tablinks" onclick="openSector(event, 'S.00')" id="defaultOpen">Sector 00</button>
+			<button class="tablinks" onclick="openSector(event, 'S.01')">Sector 01</button>
+			<button class="tablinks" onclick="openSector(event, 'S.02')">Sector 02</button>
+			<button class="tablinks" onclick="openSector(event, 'S.03')">Sector 03</button>
+			<button class="tablinks" onclick="openSector(event, 'S.04')">Sector 04</button>
+			<button class="tablinks" onclick="openSector(event, 'S.05')">Sector 05</button>
+			<button class="tablinks" onclick="openSector(event, 'S.06')">Sector 06</button>
+			<button class="tablinks" onclick="openSector(event, 'S.07')">Sector 07</button>
+			<button class="tablinks" onclick="openSector(event, 'S.08')">Sector 08</button>
+			<button class="tablinks" onclick="openSector(event, 'S.09')">Sector 09</button>
+		</div>
 
-        <!-- Reroll button -->
-        <div>
-            <button class="button button1" onclick="rerollAll()">Reroll All</button>
-        </div>
+		<!-- Reroll button -->
+		<div>
+			<button class="button button1" onclick="rerollAll()">Reroll All</button>
+		</div>
 
-        <!-- Tab content -->
+		<!-- Tab content -->
 		<!-- Sector 00 -->
 		<div id="S.00" class="tabcontent">
 			<span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
@@ -40,6 +40,24 @@
 				<h4>Planetary Element: <span id="random-element-S.00"></span></h4>
 				<h4>Subtype: <span id="random-subtype-S.00"></span></h4>
 				<h4>Creature Type: <span id="random-creature-S.00"></span></h4>
+				<!-- Dominant Intelligent Lifeforms -->
+				<h4>Dominant Intelligent Lifeforms: <span id="dominant-int-life-S.00"></span></h4>
+				<!-- Tech Era -->
+				<h4>Tech Era: <span id="tech-era-S.00"></span></h4>
+				<!-- Dominant Government Type -->
+				<div id="dominant-govt-S.00">
+					<h4>Dominant Government Type: <span id="gov-adj-S.00"></span> <span id="gov-type-S.00"></span></h4>
+					<div style="margin-left: 1em;">
+						<span id="gov-adj-desc-S.00" style="display: block;"></span>
+						<span id="gov-type-desc-S.00" style="display: block;"></span>
+					</div>
+					<h4>Government Objective:</h4>
+					<div style="margin-left: 1em;">
+						<span id="gov-obj-category-S.00" style="display: block;"></span>
+						<span id="gov-obj-name-S.00" style="display: block;"></span>
+						<span id="gov-obj-desc-S.00" style="display: block;"></span>
+					</div>
+				</div>
 			</div>
 			<!-- Star-specific section -->
 			<div id="star-info-S.00" style="display: none;">
@@ -75,6 +93,24 @@
 				<h4>Planetary Element: <span id="random-element-S.01"></span></h4>
 				<h4>Subtype: <span id="random-subtype-S.01"></span></h4>
 				<h4>Creature Type: <span id="random-creature-S.01"></span></h4>
+				<!-- Dominant Intelligent Lifeforms -->
+				<h4>Dominant Intelligent Lifeforms: <span id="dominant-int-life-S.01"></span></h4>
+				<!-- Tech Era -->
+				<h4>Tech Era: <span id="tech-era-S.01"></span></h4>
+				<!-- Dominant Government Type -->
+				<div id="dominant-govt-S.01">
+					<h4>Dominant Government Type: <span id="gov-adj-S.01"></span> <span id="gov-type-S.01"></span></h4>
+					<div style="margin-left: 1em;">
+						<span id="gov-adj-desc-S.01" style="display: block;"></span>
+						<span id="gov-type-desc-S.01" style="display: block;"></span>
+					</div>
+					<h4>Government Objective:</h4>
+					<div style="margin-left: 1em;">
+						<span id="gov-obj-category-S.01" style="display: block;"></span>
+						<span id="gov-obj-name-S.01" style="display: block;"></span>
+						<span id="gov-obj-desc-S.01" style="display: block;"></span>
+					</div>
+				</div>
 			</div>
 			<!-- Star-specific section -->
 			<div id="star-info-S.01" style="display: none;">
@@ -110,6 +146,24 @@
 				<h4>Planetary Element: <span id="random-element-S.02"></span></h4>
 				<h4>Subtype: <span id="random-subtype-S.02"></span></h4>
 				<h4>Creature Type: <span id="random-creature-S.02"></span></h4>
+				<!-- Dominant Intelligent Lifeforms -->
+				<h4>Dominant Intelligent Lifeforms: <span id="dominant-int-life-S.02"></span></h4>
+				<!-- Tech Era -->
+				<h4>Tech Era: <span id="tech-era-S.02"></span></h4>
+				<!-- Dominant Government Type -->
+				<div id="dominant-govt-S.02">
+					<h4>Dominant Government Type: <span id="gov-adj-S.02"></span> <span id="gov-type-S.02"></span></h4>
+					<div style="margin-left: 1em;">
+						<span id="gov-adj-desc-S.02" style="display: block;"></span>
+						<span id="gov-type-desc-S.02" style="display: block;"></span>
+					</div>
+					<h4>Government Objective:</h4>
+					<div style="margin-left: 1em;">
+						<span id="gov-obj-category-S.02" style="display: block;"></span>
+						<span id="gov-obj-name-S.02" style="display: block;"></span>
+						<span id="gov-obj-desc-S.02" style="display: block;"></span>
+					</div>
+				</div>
 			</div>
 			<!-- Star-specific section -->
 			<div id="star-info-S.02" style="display: none;">
@@ -145,6 +199,24 @@
 				<h4>Planetary Element: <span id="random-element-S.03"></span></h4>
 				<h4>Subtype: <span id="random-subtype-S.03"></span></h4>
 				<h4>Creature Type: <span id="random-creature-S.03"></span></h4>
+				<!-- Dominant Intelligent Lifeforms -->
+				<h4>Dominant Intelligent Lifeforms: <span id="dominant-int-life-S.03"></span></h4>
+				<!-- Tech Era -->
+				<h4>Tech Era: <span id="tech-era-S.03"></span></h4>
+				<!-- Dominant Government Type -->
+				<div id="dominant-govt-S.03">
+					<h4>Dominant Government Type: <span id="gov-adj-S.03"></span> <span id="gov-type-S.03"></span></h4>
+					<div style="margin-left: 1em;">
+						<span id="gov-adj-desc-S.03" style="display: block;"></span>
+						<span id="gov-type-desc-S.03" style="display: block;"></span>
+					</div>
+					<h4>Government Objective:</h4>
+					<div style="margin-left: 1em;">
+						<span id="gov-obj-category-S.03" style="display: block;"></span>
+						<span id="gov-obj-name-S.03" style="display: block;"></span>
+						<span id="gov-obj-desc-S.03" style="display: block;"></span>
+					</div>
+				</div>
 			</div>
 			<!-- Star-specific section -->
 			<div id="star-info-S.03" style="display: none;">
@@ -180,6 +252,24 @@
 				<h4>Planetary Element: <span id="random-element-S.04"></span></h4>
 				<h4>Subtype: <span id="random-subtype-S.04"></span></h4>
 				<h4>Creature Type: <span id="random-creature-S.04"></span></h4>
+				<!-- Dominant Intelligent Lifeforms -->
+				<h4>Dominant Intelligent Lifeforms: <span id="dominant-int-life-S.04"></span></h4>
+				<!-- Tech Era -->
+				<h4>Tech Era: <span id="tech-era-S.04"></span></h4>
+				<!-- Dominant Government Type -->
+				<div id="dominant-govt-S.04">
+					<h4>Dominant Government Type: <span id="gov-adj-S.04"></span> <span id="gov-type-S.04"></span></h4>
+					<div style="margin-left: 1em;">
+						<span id="gov-adj-desc-S.04" style="display: block;"></span>
+						<span id="gov-type-desc-S.04" style="display: block;"></span>
+					</div>
+					<h4>Government Objective:</h4>
+					<div style="margin-left: 1em;">
+						<span id="gov-obj-category-S.04" style="display: block;"></span>
+						<span id="gov-obj-name-S.04" style="display: block;"></span>
+						<span id="gov-obj-desc-S.04" style="display: block;"></span>
+					</div>
+				</div>
 			</div>
 			<!-- Star-specific section -->
 			<div id="star-info-S.04" style="display: none;">
@@ -215,6 +305,24 @@
 				<h4>Planetary Element: <span id="random-element-S.05"></span></h4>
 				<h4>Subtype: <span id="random-subtype-S.05"></span></h4>
 				<h4>Creature Type: <span id="random-creature-S.05"></span></h4>
+				<!-- Dominant Intelligent Lifeforms -->
+				<h4>Dominant Intelligent Lifeforms: <span id="dominant-int-life-S.05"></span></h4>
+				<!-- Tech Era -->
+				<h4>Tech Era: <span id="tech-era-S.05"></span></h4>
+				<!-- Dominant Government Type -->
+				<div id="dominant-govt-S.05">
+					<h4>Dominant Government Type: <span id="gov-adj-S.05"></span> <span id="gov-type-S.05"></span></h4>
+					<div style="margin-left: 1em;">
+						<span id="gov-adj-desc-S.05" style="display: block;"></span>
+						<span id="gov-type-desc-S.05" style="display: block;"></span>
+					</div>
+					<h4>Government Objective:</h4>
+					<div style="margin-left: 1em;">
+						<span id="gov-obj-category-S.05" style="display: block;"></span>
+						<span id="gov-obj-name-S.05" style="display: block;"></span>
+						<span id="gov-obj-desc-S.05" style="display: block;"></span>
+					</div>
+				</div>
 			</div>
 			<!-- Star-specific section -->
 			<div id="star-info-S.05" style="display: none;">
@@ -250,6 +358,24 @@
 				<h4>Planetary Element: <span id="random-element-S.06"></span></h4>
 				<h4>Subtype: <span id="random-subtype-S.06"></span></h4>
 				<h4>Creature Type: <span id="random-creature-S.06"></span></h4>
+				<!-- Dominant Intelligent Lifeforms -->
+				<h4>Dominant Intelligent Lifeforms: <span id="dominant-int-life-S.06"></span></h4>
+				<!-- Tech Era -->
+				<h4>Tech Era: <span id="tech-era-S.06"></span></h4>
+				<!-- Dominant Government Type -->
+				<div id="dominant-govt-S.06">
+					<h4>Dominant Government Type: <span id="gov-adj-S.06"></span> <span id="gov-type-S.06"></span></h4>
+					<div style="margin-left: 1em;">
+						<span id="gov-adj-desc-S.06" style="display: block;"></span>
+						<span id="gov-type-desc-S.06" style="display: block;"></span>
+					</div>
+					<h4>Government Objective:</h4>
+					<div style="margin-left: 1em;">
+						<span id="gov-obj-category-S.06" style="display: block;"></span>
+						<span id="gov-obj-name-S.06" style="display: block;"></span>
+						<span id="gov-obj-desc-S.06" style="display: block;"></span>
+					</div>
+				</div>
 			</div>
 			<!-- Star-specific section -->
 			<div id="star-info-S.06" style="display: none;">
@@ -285,6 +411,24 @@
 				<h4>Planetary Element: <span id="random-element-S.07"></span></h4>
 				<h4>Subtype: <span id="random-subtype-S.07"></span></h4>
 				<h4>Creature Type: <span id="random-creature-S.07"></span></h4>
+				<!-- Dominant Intelligent Lifeforms -->
+				<h4>Dominant Intelligent Lifeforms: <span id="dominant-int-life-S.07"></span></h4>
+				<!-- Tech Era -->
+				<h4>Tech Era: <span id="tech-era-S.07"></span></h4>
+				<!-- Dominant Government Type -->
+				<div id="dominant-govt-S.07">
+					<h4>Dominant Government Type: <span id="gov-adj-S.07"></span> <span id="gov-type-S.07"></span></h4>
+					<div style="margin-left: 1em;">
+						<span id="gov-adj-desc-S.07" style="display: block;"></span>
+						<span id="gov-type-desc-S.07" style="display: block;"></span>
+					</div>
+					<h4>Government Objective:</h4>
+					<div style="margin-left: 1em;">
+						<span id="gov-obj-category-S.07" style="display: block;"></span>
+						<span id="gov-obj-name-S.07" style="display: block;"></span>
+						<span id="gov-obj-desc-S.07" style="display: block;"></span>
+					</div>
+				</div>
 			</div>
 			<!-- Star-specific section -->
 			<div id="star-info-S.07" style="display: none;">
@@ -320,6 +464,24 @@
 				<h4>Planetary Element: <span id="random-element-S.08"></span></h4>
 				<h4>Subtype: <span id="random-subtype-S.08"></span></h4>
 				<h4>Creature Type: <span id="random-creature-S.08"></span></h4>
+				<!-- Dominant Intelligent Lifeforms -->
+				<h4>Dominant Intelligent Lifeforms: <span id="dominant-int-life-S.08"></span></h4>
+				<!-- Tech Era -->
+				<h4>Tech Era: <span id="tech-era-S.08"></span></h4>
+				<!-- Dominant Government Type -->
+				<div id="dominant-govt-S.08">
+					<h4>Dominant Government Type: <span id="gov-adj-S.08"></span> <span id="gov-type-S.08"></span></h4>
+					<div style="margin-left: 1em;">
+						<span id="gov-adj-desc-S.08" style="display: block;"></span>
+						<span id="gov-type-desc-S.08" style="display: block;"></span>
+					</div>
+					<h4>Government Objective:</h4>
+					<div style="margin-left: 1em;">
+						<span id="gov-obj-category-S.08" style="display: block;"></span>
+						<span id="gov-obj-name-S.08" style="display: block;"></span>
+						<span id="gov-obj-desc-S.08" style="display: block;"></span>
+					</div>
+				</div>
 			</div>
 			<!-- Star-specific section -->
 			<div id="star-info-S.08" style="display: none;">
@@ -355,6 +517,24 @@
 				<h4>Planetary Element: <span id="random-element-S.09"></span></h4>
 				<h4>Subtype: <span id="random-subtype-S.09"></span></h4>
 				<h4>Creature Type: <span id="random-creature-S.09"></span></h4>
+				<!-- Dominant Intelligent Lifeforms -->
+				<h4>Dominant Intelligent Lifeforms: <span id="dominant-int-life-S.09"></span></h4>
+				<!-- Tech Era -->
+				<h4>Tech Era: <span id="tech-era-S.09"></span></h4>
+				<!-- Dominant Government Type -->
+				<div id="dominant-govt-S.09">
+					<h4>Dominant Government Type: <span id="gov-adj-S.09"></span> <span id="gov-type-S.09"></span></h4>
+					<div style="margin-left: 1em;">
+						<span id="gov-adj-desc-S.09" style="display: block;"></span>
+						<span id="gov-type-desc-S.09" style="display: block;"></span>
+					</div>
+					<h4>Government Objective:</h4>
+					<div style="margin-left: 1em;">
+						<span id="gov-obj-category-S.09" style="display: block;"></span>
+						<span id="gov-obj-name-S.09" style="display: block;"></span>
+						<span id="gov-obj-desc-S.09" style="display: block;"></span>
+					</div>
+				</div>
 			</div>
 			<!-- Star-specific section -->
 			<div id="star-info-S.09" style="display: none;">
@@ -382,7 +562,7 @@
 		</div>
 
 
-        <script type="text/javascript" src="SolarSystemGen.js"></script>
-        <!--<script type="application/json" src="../SolarSystemGenerator/SolarSystem_JSONs/planetTypes.json"></script>--!>
-    </body>
+		<script type="text/javascript" src="SolarSystemGen.js"></script>
+		<!--<script type="application/json" src="../SolarSystemGenerator/SolarSystem_JSONs/planetTypes.json"></script>--!>
+	</body>
 </html>
