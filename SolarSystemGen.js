@@ -42,15 +42,39 @@ async function fetchData() {
   const stationResponse = await fetch('./SolarSystem_JSONs/spaceStationTypes.json');
   const spaceStationTypes = await stationResponse.json();
 
+  // Fetch technology era data
+  const techEraResponse = await fetch('./SolarSystem_JSONs/techEra.json');
+  const techEra = await techEraResponse.json();
+
+  // Fetch dominant intelligent life data
+  const dominantIntLifeResponse = await fetch('./SolarSystem_JSONs/dominantIntLife.json');
+  const dominantIntLife = await dominantIntLifeResponse.json();
+
+  // Fetch government adjectives data
+  const govAdjResponse = await fetch('./SolarSystem_JSONs/GovAdj.json');
+  const govAdj = await govAdjResponse.json();
+
+  // Fetch government objectives data
+  const govObjResponse = await fetch('./SolarSystem_JSONs/GovObj.json');
+  const govObj = await govObjResponse.json();
+
+  // Fetch government types data
+  const govTypesResponse = await fetch('./SolarSystem_JSONs/GovTypes.json');
+  const govTypes = await govTypesResponse.json();
+
   // Store all data in a single object for easy access
   data = {
     planetTypes,
     starTypes,
     asteroidBeltTypes,
     wreckageTypes,
-    spaceStationTypes
+    spaceStationTypes,
+    techEra,
+    dominantIntLife,
+    govAdj,
+    govObj,
+    govTypes
   };
-  return data;
 }
 
 function openSector(evt, sectorName) {
