@@ -1,0 +1,124 @@
+{
+    "GovernmentTypes": [
+        {
+            "name": "Autocracy",
+            "description": "Rule by a single person with absolute power, whose authority typically derives from military strength or claims of divine right."
+        },
+        {
+            "name": "Technocracy",
+            "description": "Government by technical experts who make decisions based on specialized knowledge rather than public opinion."
+        },
+        {
+            "name": "Oligarchy",
+            "description": "Rule by a small group of powerful individuals who control wealth, resources, or key industries."
+        },
+        {
+            "name": "Democracy",
+            "description": "System where power ultimately rests with citizens who vote directly on legislation or elect representatives."
+        },
+        {
+            "name": "Theocracy",
+            "description": "Rule by religious authorities who govern according to divine mandate or sacred texts."
+        },
+        {
+            "name": "Plutocracy",
+            "description": "Government controlled by the wealthy, where political power correlates directly with economic power."
+        },
+        {
+            "name": "Meritocracy",
+            "description": "System where advancement is based on demonstrated ability and achievement rather than wealth or heritage."
+        },
+        {
+            "name": "Federation",
+            "description": "Union of partially self-governing states under a central government, balancing local autonomy with collective security."
+        },
+        {
+            "name": "Corporatocracy",
+            "description": "Government controlled by corporate entities, where business interests dictate policy and law."
+        },
+        {
+            "name": "AI Directorate",
+            "description": "Society governed by artificial intelligence that makes decisions based on algorithms and data analysis."
+        },
+        {
+            "name": "Hive Mind",
+            "description": "Collective consciousness where individuals share thoughts and operate as components of a unified entity."
+        },
+        {
+            "name": "Military Junta",
+            "description": "Rule by a committee of military leaders who seize power through force, often temporarily but sometimes enduring."
+        },
+        {
+            "name": "Feudal Monarchy",
+            "description": "Hierarchical system with a monarch at the top and vassals who owe loyalty in exchange for land and protection."
+        },
+        {
+            "name": "Magocracy",
+            "description": "Rule by the most powerful magic users, where arcane ability determines social standing and authority."
+        },
+        {
+            "name": "Tribal Council",
+            "description": "Government by elders or representatives from family groups who make decisions through consensus."
+        },
+        {
+            "name": "Anarcho-Syndicalism",
+            "description": "Self-management of collectives where workers control the means of production without centralized authority."
+        },
+        {
+            "name": "Stratocracy",
+            "description": "Military-controlled state where civil and military leadership are unified and citizenship equals military service."
+        },
+        {
+            "name": "Gerontocracy",
+            "description": "Rule by the elderly, valuing wisdom and experience above other qualities."
+        },
+        {
+            "name": "Ecocracy",
+            "description": "Government prioritizing environmental concerns and sustainable practices in all decision-making."
+        },
+        {
+            "name": "Noocracy",
+            "description": "System governed by the wise, where intelligence and rational thinking are the primary criteria for leadership."
+        },
+        {
+            "name": "Kritarchy",
+            "description": "Rule by judges who interpret and enforce a legal code or sacred text rather than creating new laws."
+        },
+        {
+            "name": "Constitutional Monarchy",
+            "description": "System combining hereditary rule with democratic institutions, where the monarch serves as head of state with limited powers."
+        },
+        {
+            "name": "Demarchive",
+            "description": "Government by randomly selected citizens who serve terms before returning to private life."
+        },
+        {
+            "name": "Geniocracy",
+            "description": "Rule by geniuses, where intelligence tests determine eligibility for leadership positions."
+        },
+        {
+            "name": "Necrocracy",
+            "description": "Government officially ruled by a deceased figure, with living officials claiming to interpret their will."
+        },
+        {
+            "name": "Biocracy",
+            "description": "Rule by biological or genetic superiority, where leadership is determined by physical traits or bloodlines."
+        },
+        {
+            "name": "Post-Scarcity Collective",
+            "description": "Society where abundance eliminates traditional economic concerns, governed through voluntary association."
+        },
+        {
+            "name": "Kleptocracy",
+            "description": "Rule by thieves, where corruption and embezzlement of public funds are institutionalized."
+        },
+        {
+            "name": "Astrological Regency",
+            "description": "Government guided by celestial omens, where planetary movements determine policy and leadership changes."
+        },
+        {
+            "name": "Virtual Democracy",
+            "description": "System where citizens vote continuously through digital platforms on all matters of governance."
+        }
+    ]
+}
