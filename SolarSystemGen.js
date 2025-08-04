@@ -169,12 +169,16 @@ function generatePlanet(sectorName) {
   let elementType = Math.floor(Math.random() * data.planetTypes.planetTypes[randomElement].planetSubType.length);
 
   // Display the result in the relevant sector element
-  document.getElementById(`random-element-${sectorName}`).innerText = data.planetTypes.planetTypes[randomElement].type + ' (' + randomElement + ')';
+  let planetType = data.planetTypes.planetTypes[randomElement];
+  document.getElementById(`random-element-${sectorName}`).innerText = `${planetType.type} (${randomElement})`;
+  document.getElementById(`random-element-desc-${sectorName}`).innerText = planetType.description;
 
   // Display the result in the relevant sector subtype
-  document.getElementById(`random-subtype-${sectorName}`).innerText = data.planetTypes.planetTypes[randomElement].planetSubType[elementType];
+  let subtype = planetType.planetSubType[elementType];
+  document.getElementById(`random-subtype-${sectorName}`).innerText = subtype.name;
+  document.getElementById(`random-subtype-desc-${sectorName}`).innerText = subtype.description;
 
-  let creatureType = data.planetTypes.planetTypes[randomElement].creatureType.join('\n\n'); //A simpler way to do it but less formatting options
+  let creatureType = planetType.creatureType.join('\n\n'); //A simpler way to do it but less formatting options
   // Display the result in the relevant sector creatures
   document.getElementById(`random-creature-${sectorName}`).innerText = creatureType;
 

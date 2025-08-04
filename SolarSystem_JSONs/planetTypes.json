@@ -2,12 +2,18 @@
 	"planetTypes": [
         {
 			"type": "Air",
+			"description": "Planets dominated by air and atmospheric phenomena.",
 			"planetSubType": [
-				"Gas Giant",
-				"Earth-like with Floating Islands",
-				"Eternal Storms on an Earth-like planet",
-				"A random amount of floating islands only connected by a connected atmosphere that is only held together by Magic.",
-				"ETC"
+				{"name": "Gas Giant", "description": "A massive planet composed mostly of gases with no solid surface."},
+				{"name": "Earth-like with Floating Islands", "description": "A planet with floating landmasses suspended in the atmosphere."},
+				{"name": "Eternal Storms on an Earth-like planet", "description": "A planet with constant, unending storms."},
+				{"name": "A random amount of floating islands only connected by a connected atmosphere that is only held together by Magic.", "description": "Floating islands connected by magical atmospheric forces."},
+				{"name": "ETC", "description": "Other air-dominated planetary variations."},
+				{"name": "Sky Archipelago", "description": "Floating islands connected by air currents."},
+				{"name": "Perpetual Tornado World", "description": "A planet dominated by massive, unending tornadoes."},
+				{"name": "Cloud World", "description": "A planet where the surface is entirely made of dense, walkable clouds."},
+				{"name": "Hurricane Belt", "description": "A planet with constant hurricane-like storms circling its equator."},
+				{"name": "Invisible Atmosphere World", "description": "A planet with an atmosphere so clear it appears invisible."}
 			],
 			"creatureType": [
 				"The most common traits of creatures in this world are: the ability to fly; the ability to survive in high altitudes; being composed of air or electricity; the ability to manipulate the winds and skies with magical or supernatural powers.",
@@ -16,11 +22,17 @@
 		},
 		{
 			"type": "Earth",
+			"description": "Planets dominated by rocky terrains and solid ground.",
 			"planetSubType": [
-				"Mostly rock and stone",
-				"Landmass surrounds Ocean",
-				"High concentration of crystals and metals",
-				"Earth-like with less oceans and more mountains"
+				{"name": "Mostly rock and stone", "description": "A planet with a surface primarily composed of rock and stone."},
+				{"name": "Landmass surrounds Ocean", "description": "A planet where landmasses encircle vast oceans."},
+				{"name": "High concentration of crystals and metals", "description": "A planet rich in crystals and metallic resources."},
+				{"name": "Earth-like with less oceans and more mountains", "description": "A planet with reduced water bodies and increased mountainous regions."},
+				{"name": "Cavernous World", "description": "A planet with vast underground cave systems and little surface activity."},
+				{"name": "Crystal Plains", "description": "A planet covered in shimmering crystal fields."},
+				{"name": "Mountainous World", "description": "A planet dominated by towering mountain ranges."},
+				{"name": "Geode World", "description": "A planet with a crust that is hollow and filled with massive geodes."},
+				{"name": "Earthquake World", "description": "A planet with constant seismic activity shaping its terrain."}
 			],
 			"creatureType": [
 				"The most common traits of creatures in this world are: the ability to dig through the ground, sometimes leaving behind permanent tunnels; being able to climb rocky terrains and travel across rocky terrains fast; having skins that are as hard as stone or made of stone; the ability to manipulate the lands with magical or supernatural powers; and the ability to sense anything touching the same rocky surface.",
@@ -29,10 +41,16 @@
 		},
 		{
 			"type": "Fire",
+			"description": "Planets dominated by heat, flames, and volcanic activity.",
 			"planetSubType": [
-				"Star-like",
-				"Lava Oceans",
-				"Volcanic Lands"
+				{"name": "Star-like", "description": "A planet resembling a star, radiating intense heat and light."},
+				{"name": "Lava Oceans", "description": "A planet with vast oceans of molten lava."},
+				{"name": "Volcanic Lands", "description": "A planet covered in active volcanoes and volcanic terrain."},
+				{"name": "Molten Core World", "description": "A planet with a thin crust and visible molten lava flows."},
+				{"name": "Ash Desert", "description": "A planet covered in ash and soot from constant volcanic eruptions."},
+				{"name": "Inferno World", "description": "A planet engulfed in flames, with no solid ground."},
+				{"name": "Solar Flare World", "description": "A planet that emits solar flares, scorching its surface."},
+				{"name": "Volcanic Archipelago", "description": "A planet with chains of volcanic islands surrounded by lava seas."}
 			],
 			"creatureType": [
 				"The most common traits of creatures in this world are: the ability to breathe fire; resist or be immune to extreme heat, including from fire; being made of fire; being able to produce or manipulate fire with magical or supernatural powers; and the ability to produce and manipulate smoke and ash.",
@@ -41,10 +59,16 @@
 		},
 		{
 			"type": "Water",
+			"description": "Planets dominated by water and aquatic environments.",
 			"planetSubType": [
-				"Water World",
-				"Large Oceans with Small Islands",
-				"Frozen Ice World"
+				{"name": "Water World", "description": "A planet with no land, only a vast, deep ocean."},
+				{"name": "Large Oceans with Small Islands", "description": "A planet with large oceans dotted by small islands."},
+				{"name": "Frozen Ice World", "description": "A planet where the surface is entirely frozen, with liquid water beneath."},
+				{"name": "Endless Ocean", "description": "A planet with no land, only a vast, deep ocean."},
+				{"name": "Coral World", "description": "A planet with massive coral structures forming the primary terrain."},
+				{"name": "Tidal World", "description": "A planet with extreme tidal forces creating massive waves."},
+				{"name": "Underwater Caverns", "description": "A planet with intricate underwater cave systems."},
+				{"name": "Frozen Ocean World", "description": "A planet where the surface is entirely frozen, with liquid water beneath."}
 			],
 			"creatureType": [
 				"The most common traits of creatures in this world are: the ability to breathe underwater; the ability to survive the pressure of the depths of the oceans; the ability to resist the cold; being made out of water or ice; the ability to manipulate water, ice, the oceans or other bodies of water with magic or supernatural powers.",
@@ -53,12 +77,13 @@
 		},
 		{
             "type": "Wood",
+			"description": "Planets dominated by forests, trees, and plant life.",
 			"planetSubType": [
-				"Dense Forest World",
-				"Living Tree World",
-				"Jungle World",
-				"Floating Forest Islands",
-				"Ancient Grove World"
+				{"name": "Dense Forest World", "description": "A planet covered entirely by dense, towering forests."},
+				{"name": "Living Tree World", "description": "A planet where the trees themselves are sentient and form the primary ecosystem."},
+				{"name": "Jungle World", "description": "A humid, tropical planet with thick vegetation and diverse wildlife."},
+				{"name": "Floating Forest Islands", "description": "Forests growing on floating landmasses in the sky."},
+				{"name": "Ancient Grove World", "description": "A planet dominated by ancient, massive trees with magical properties."}
 			],
 			"creatureType": [
 				"The most common traits of creatures in this world are: the ability to climb trees; the ability to manipulate plants and trees with magic or supernatural powers; being made of wood or plants; and the ability to communicate with plants.",
@@ -67,12 +92,13 @@
         },
         {
             "type": "Metal",
+			"description": "Planets dominated by metallic terrains and industrial landscapes.",
 			"planetSubType": [
-				"Industrial World",
-				"Metallic Crust World",
-				"Magnetic Core World",
-				"Rust World",
-				"Forged World"
+				{"name": "Industrial World", "description": "A planet covered in factories and machinery, with little to no natural vegetation."},
+				{"name": "Metallic Crust World", "description": "A planet with a surface made entirely of metal, reflecting sunlight."},
+				{"name": "Magnetic Core World", "description": "A planet with a strong magnetic field and metallic terrain."},
+				{"name": "Rust World", "description": "A decaying planet where metal structures and surfaces are corroded and rusted."},
+				{"name": "Forged World", "description": "A planet shaped and constructed entirely by advanced civilizations using metal."}
 			],
 			"creatureType": [
 				"The most common traits of creatures in this world are: the ability to consume metal; the ability to manipulate metal with magic or supernatural powers; being made of metal.",
@@ -81,68 +107,76 @@
         },
 		{
 			"type": "Light",
+			"description": "Planets dominated by light and luminous phenomena.",
 			"planetSubType": [
-				"Eternal Daytime",
-				"All objects emit Light",
-				"Lots of naturally occurring resources produces light"
+				{"name": "Eternal Daytime", "description": "A planet where it is always daytime, with no night cycle."},
+				{"name": "All objects emit Light", "description": "A planet where all objects naturally emit light."},
+				{"name": "Lots of naturally occurring resources produces light", "description": "A planet rich in resources that naturally produce light."}
 			],
 			"creatureType": [
-				"The most common traits of creatures in this world are: blank.",
-				"Examples of such creatures include blank"
+				"The most common traits of creatures in this world are: the ability to emit or manipulate light; being composed of light; and the ability to thrive in bright environments.",
+				"Examples of such creatures include Light Elementals, Radiant Dragons, and luminous beings."
 			]
 		},
 		{
 			"type": "Dark",
+			"description": "Planets dominated by darkness and shadowy phenomena.",
 			"planetSubType": [
-				"Eternal Nighttime",
-				"Light sources are less effective while near the planet",
-				"Lots of naturally occurring resources produces darkness"
+				{"name": "Eternal Nighttime", "description": "A planet where it is always nighttime, with no day cycle."},
+				{"name": "Light sources are less effective while near the planet", "description": "A planet where light sources are dimmed or ineffective."},
+				{"name": "Lots of naturally occurring resources produces darkness", "description": "A planet rich in resources that naturally produce darkness or shadow."}
 			],
 			"creatureType": [
-				"The most common traits of creatures in this world are: blank.",
-				"Examples of such creatures include blank"
+				"The most common traits of creatures in this world are: the ability to manipulate shadows; being composed of darkness; and the ability to thrive in low-light environments.",
+				"Examples of such creatures include Shadow Elementals, Dark Dragons, and shadowy beings."
 			]
 		},
 		{
 			"type": "Holy",
+			"description": "Planets imbued with divine energy and sacred phenomena.",
 			"planetSubType": [
-				"Hallowed/Consecrated Lands",
-				"Holy Magic is empowered"
+				{"name": "Hallowed/Consecrated Lands", "description": "A planet with lands blessed by divine energy."},
+				{"name": "Holy Magic is empowered", "description": "A planet where holy magic is significantly stronger."}
 			],
 			"creatureType": [
-				"The most common traits of creatures in this world are: blank.",
-				"Examples of such creatures include blank"
+				"The most common traits of creatures in this world are: the ability to channel divine energy; being composed of holy light; and the ability to repel unholy forces.",
+				"Examples of such creatures include Angels, Holy Elementals, and divine beings."
 			]
 		},
 		{
 			"type": "Unholy",
+			"description": "Planets imbued with dark energy and cursed phenomena.",
 			"planetSubType": [
-				"Desecrated Lands",
-				"Fiendish Magic is empowered"
+				{"name": "Desecrated Lands", "description": "A planet with lands cursed by dark energy."},
+				{"name": "Fiendish Magic is empowered", "description": "A planet where fiendish magic is significantly stronger."}
 			],
 			"creatureType": [
-				"The most common traits of creatures in this world are: blank.",
-				"Examples of such creatures include blank"
+				"The most common traits of creatures in this world are: the ability to channel dark energy; being composed of unholy power; and the ability to corrupt or destroy holy forces.",
+				"Examples of such creatures include Demons, Unholy Elementals, and fiendish beings."
 			]
 		},
 		{
             "type": "Fairy/Fae",
-			"planetSubType": ["Blank"],
-			"creatureType": [
-				"The most common traits of creatures in this world are: blank.",
-				"Examples of such creatures include blank"
-			]
-        },
-		{
-			"type": "Dead",
+			"description": "Planets dominated by magical and whimsical phenomena.",
 			"planetSubType": [
-				"Lifeless Wasteland",
-				"Shattered World",
-				"Undeath emenates from the world"
+				{"name": "Blank", "description": "A placeholder for unique fairy/fae subtypes."}
 			],
 			"creatureType": [
-				"The most common traits of creatures in this world are: anything or nothing.",
-				"Examples of such creatures include anything or nothing."
+				"The most common traits of creatures in this world are: the ability to manipulate nature with magic; being composed of whimsical energy; and the ability to interact with magical phenomena.",
+				"Examples of such creatures include Fairies, Fae Dragons, and magical beings."
+			]
+		},
+		{
+			"type": "Dead",
+			"description": "Planets dominated by death and decay.",
+			"planetSubType": [
+				{"name": "Lifeless Wasteland", "description": "A planet devoid of life, covered in barren wastelands."},
+				{"name": "Shattered World", "description": "A planet broken into fragments, with no signs of life."},
+				{"name": "Undeath emanates from the world", "description": "A planet where undead creatures and necrotic energy thrive."}
+			],
+			"creatureType": [
+				"The most common traits of creatures in this world are: the ability to survive without life; being composed of necrotic energy; and the ability to spread decay.",
+				"Examples of such creatures include Undead, Necrotic Elementals, and skeletal beings."
 			]
 		},
 		{
