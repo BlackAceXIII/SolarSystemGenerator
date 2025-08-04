@@ -53,7 +53,13 @@
 		},
 		{
             "type": "Wood",
-			"planetSubType": ["Blank"],
+			"planetSubType": [
+				"Dense Forest World",
+				"Living Tree World",
+				"Jungle World",
+				"Floating Forest Islands",
+				"Ancient Grove World"
+			],
 			"creatureType": [
 				"The most common traits of creatures in this world are: the ability to climb trees; the ability to manipulate plants and trees with magic or supernatural powers; being made of wood or plants; and the ability to communicate with plants.",
 				"Examples of such creatures include Wood Elementals, Forest Dragons, Monkeys, Panthers, and a Bear made of wood."
@@ -61,7 +67,13 @@
         },
         {
             "type": "Metal",
-			"planetSubType": ["Blank"],
+			"planetSubType": [
+				"Industrial World",
+				"Metallic Crust World",
+				"Magnetic Core World",
+				"Rust World",
+				"Forged World"
+			],
 			"creatureType": [
 				"The most common traits of creatures in this world are: the ability to consume metal; the ability to manipulate metal with magic or supernatural powers; being made of metal.",
 				"Examples of such creatures include Metal Elementals, Metallic Dragons, and a Bear made of metal."
